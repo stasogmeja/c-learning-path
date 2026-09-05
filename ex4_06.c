@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int
-main(int argc, char **argv){
+main(int argc, char **argv) {
     int c;
     int lines = 0;
     int chars = 0;
 
     printf("Enter text:\n");
 
-    while ((c = getchar()) != EOF){
+    while ((c = getchar()) != EOF) {
         chars++;
 
-        if (c == '\n'){
+        if (c == '\n') {
             lines++;
         }
     }
@@ -20,5 +20,4 @@ main(int argc, char **argv){
     printf("Chars:%7d\n", chars);
 
     return 0;
-
 }
